@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		652DF72721BF4A3A000DB78C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 652DF72621BF4A3A000DB78C /* AppDelegate.m */; };
+		652DF72A21BF4A3A000DB78C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 652DF72921BF4A3A000DB78C /* ViewController.m */; };
+		652DF72D21BF4A3A000DB78C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652DF72B21BF4A3A000DB78C /* Main.storyboard */; };
+		652DF72F21BF4A3B000DB78C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 652DF72E21BF4A3B000DB78C /* Assets.xcassets */; };
+		652DF73221BF4A3B000DB78C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652DF73021BF4A3B000DB78C /* LaunchScreen.storyboard */; };
+		652DF73521BF4A3B000DB78C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 652DF73421BF4A3B000DB78C /* main.m */; };
+		652DF73F21BF4A3B000DB78C /* TMCookieTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 652DF73E21BF4A3B000DB78C /* TMCookieTestTests.m */; };
+		652DF74A21BF4A3B000DB78C /* TMCookieTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 652DF74921BF4A3B000DB78C /* TMCookieTestUITests.m */; };
+		652DF75F21BF4A61000DB78C /* NSHTTPCookie+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 652DF75821BF4A61000DB78C /* NSHTTPCookie+Util.m */; };
+		652DF76121BF4A61000DB78C /* WKCookieManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 652DF75D21BF4A61000DB78C /* WKCookieManager.m */; };
+		652DF76421BF4A97000DB78C /* WKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 652DF76321BF4A97000DB78C /* WKViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		652DF73B21BF4A3B000DB78C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 652DF71A21BF4A3A000DB78C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 652DF72121BF4A3A000DB78C;
+			remoteInfo = TMCookieTest;
+		};
+		652DF74621BF4A3B000DB78C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 652DF71A21BF4A3A000DB78C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 652DF72121BF4A3A000DB78C;
+			remoteInfo = TMCookieTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		652DF72221BF4A3A000DB78C /* TMCookieTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMCookieTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		652DF72521BF4A3A000DB78C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		652DF72621BF4A3A000DB78C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		652DF72821BF4A3A000DB78C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		652DF72921BF4A3A000DB78C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		652DF72C21BF4A3A000DB78C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		652DF72E21BF4A3B000DB78C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		652DF73121BF4A3B000DB78C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		652DF73321BF4A3B000DB78C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		652DF73421BF4A3B000DB78C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		652DF73A21BF4A3B000DB78C /* TMCookieTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMCookieTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		652DF73E21BF4A3B000DB78C /* TMCookieTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMCookieTestTests.m; sourceTree = "<group>"; };
+		652DF74021BF4A3B000DB78C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		652DF74521BF4A3B000DB78C /* TMCookieTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMCookieTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		652DF74921BF4A3B000DB78C /* TMCookieTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMCookieTestUITests.m; sourceTree = "<group>"; };
+		652DF74B21BF4A3B000DB78C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		652DF75821BF4A61000DB78C /* NSHTTPCookie+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSHTTPCookie+Util.m"; sourceTree = "<group>"; };
+		652DF75A21BF4A61000DB78C /* NSHTTPCookie+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSHTTPCookie+Util.h"; sourceTree = "<group>"; };
+		652DF75D21BF4A61000DB78C /* WKCookieManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKCookieManager.m; sourceTree = "<group>"; };
+		652DF75E21BF4A61000DB78C /* WKCookieManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKCookieManager.h; sourceTree = "<group>"; };
+		652DF76221BF4A97000DB78C /* WKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKViewController.h; sourceTree = "<group>"; };
+		652DF76321BF4A97000DB78C /* WKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		652DF71F21BF4A3A000DB78C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652DF73721BF4A3B000DB78C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652DF74221BF4A3B000DB78C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		652DF71921BF4A3A000DB78C = {
+			isa = PBXGroup;
+			children = (
+				652DF72421BF4A3A000DB78C /* TMCookieTest */,
+				652DF73D21BF4A3B000DB78C /* TMCookieTestTests */,
+				652DF74821BF4A3B000DB78C /* TMCookieTestUITests */,
+				652DF72321BF4A3A000DB78C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		652DF72321BF4A3A000DB78C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				652DF72221BF4A3A000DB78C /* TMCookieTest.app */,
+				652DF73A21BF4A3B000DB78C /* TMCookieTestTests.xctest */,
+				652DF74521BF4A3B000DB78C /* TMCookieTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		652DF72421BF4A3A000DB78C /* TMCookieTest */ = {
+			isa = PBXGroup;
+			children = (
+				652DF75C21BF4A61000DB78C /* KCTools */,
+				652DF72521BF4A3A000DB78C /* AppDelegate.h */,
+				652DF72621BF4A3A000DB78C /* AppDelegate.m */,
+				652DF72821BF4A3A000DB78C /* ViewController.h */,
+				652DF72921BF4A3A000DB78C /* ViewController.m */,
+				652DF76221BF4A97000DB78C /* WKViewController.h */,
+				652DF76321BF4A97000DB78C /* WKViewController.m */,
+				652DF72B21BF4A3A000DB78C /* Main.storyboard */,
+				652DF72E21BF4A3B000DB78C /* Assets.xcassets */,
+				652DF73021BF4A3B000DB78C /* LaunchScreen.storyboard */,
+				652DF73321BF4A3B000DB78C /* Info.plist */,
+				652DF73421BF4A3B000DB78C /* main.m */,
+			);
+			path = TMCookieTest;
+			sourceTree = "<group>";
+		};
+		652DF73D21BF4A3B000DB78C /* TMCookieTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				652DF73E21BF4A3B000DB78C /* TMCookieTestTests.m */,
+				652DF74021BF4A3B000DB78C /* Info.plist */,
+			);
+			path = TMCookieTestTests;
+			sourceTree = "<group>";
+		};
+		652DF74821BF4A3B000DB78C /* TMCookieTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				652DF74921BF4A3B000DB78C /* TMCookieTestUITests.m */,
+				652DF74B21BF4A3B000DB78C /* Info.plist */,
+			);
+			path = TMCookieTestUITests;
+			sourceTree = "<group>";
+		};
+		652DF75C21BF4A61000DB78C /* KCTools */ = {
+			isa = PBXGroup;
+			children = (
+				652DF75A21BF4A61000DB78C /* NSHTTPCookie+Util.h */,
+				652DF75821BF4A61000DB78C /* NSHTTPCookie+Util.m */,
+				652DF75E21BF4A61000DB78C /* WKCookieManager.h */,
+				652DF75D21BF4A61000DB78C /* WKCookieManager.m */,
+			);
+			path = KCTools;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		652DF72121BF4A3A000DB78C /* TMCookieTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 652DF74E21BF4A3B000DB78C /* Build configuration list for PBXNativeTarget "TMCookieTest" */;
+			buildPhases = (
+				652DF71E21BF4A3A000DB78C /* Sources */,
+				652DF71F21BF4A3A000DB78C /* Frameworks */,
+				652DF72021BF4A3A000DB78C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TMCookieTest;
+			productName = TMCookieTest;
+			productReference = 652DF72221BF4A3A000DB78C /* TMCookieTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		652DF73921BF4A3B000DB78C /* TMCookieTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 652DF75121BF4A3B000DB78C /* Build configuration list for PBXNativeTarget "TMCookieTestTests" */;
+			buildPhases = (
+				652DF73621BF4A3B000DB78C /* Sources */,
+				652DF73721BF4A3B000DB78C /* Frameworks */,
+				652DF73821BF4A3B000DB78C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				652DF73C21BF4A3B000DB78C /* PBXTargetDependency */,
+			);
+			name = TMCookieTestTests;
+			productName = TMCookieTestTests;
+			productReference = 652DF73A21BF4A3B000DB78C /* TMCookieTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		652DF74421BF4A3B000DB78C /* TMCookieTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 652DF75421BF4A3B000DB78C /* Build configuration list for PBXNativeTarget "TMCookieTestUITests" */;
+			buildPhases = (
+				652DF74121BF4A3B000DB78C /* Sources */,
+				652DF74221BF4A3B000DB78C /* Frameworks */,
+				652DF74321BF4A3B000DB78C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				652DF74721BF4A3B000DB78C /* PBXTargetDependency */,
+			);
+			name = TMCookieTestUITests;
+			productName = TMCookieTestUITests;
+			productReference = 652DF74521BF4A3B000DB78C /* TMCookieTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		652DF71A21BF4A3A000DB78C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = TeeMo;
+				TargetAttributes = {
+					652DF72121BF4A3A000DB78C = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					652DF73921BF4A3B000DB78C = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 652DF72121BF4A3A000DB78C;
+					};
+					652DF74421BF4A3B000DB78C = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 652DF72121BF4A3A000DB78C;
+					};
+				};
+			};
+			buildConfigurationList = 652DF71D21BF4A3A000DB78C /* Build configuration list for PBXProject "TMCookieTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 652DF71921BF4A3A000DB78C;
+			productRefGroup = 652DF72321BF4A3A000DB78C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				652DF72121BF4A3A000DB78C /* TMCookieTest */,
+				652DF73921BF4A3B000DB78C /* TMCookieTestTests */,
+				652DF74421BF4A3B000DB78C /* TMCookieTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		652DF72021BF4A3A000DB78C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652DF73221BF4A3B000DB78C /* LaunchScreen.storyboard in Resources */,
+				652DF72F21BF4A3B000DB78C /* Assets.xcassets in Resources */,
+				652DF72D21BF4A3A000DB78C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652DF73821BF4A3B000DB78C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652DF74321BF4A3B000DB78C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		652DF71E21BF4A3A000DB78C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652DF72A21BF4A3A000DB78C /* ViewController.m in Sources */,
+				652DF73521BF4A3B000DB78C /* main.m in Sources */,
+				652DF76121BF4A61000DB78C /* WKCookieManager.m in Sources */,
+				652DF75F21BF4A61000DB78C /* NSHTTPCookie+Util.m in Sources */,
+				652DF72721BF4A3A000DB78C /* AppDelegate.m in Sources */,
+				652DF76421BF4A97000DB78C /* WKViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652DF73621BF4A3B000DB78C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652DF73F21BF4A3B000DB78C /* TMCookieTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652DF74121BF4A3B000DB78C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652DF74A21BF4A3B000DB78C /* TMCookieTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		652DF73C21BF4A3B000DB78C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 652DF72121BF4A3A000DB78C /* TMCookieTest */;
+			targetProxy = 652DF73B21BF4A3B000DB78C /* PBXContainerItemProxy */;
+		};
+		652DF74721BF4A3B000DB78C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 652DF72121BF4A3A000DB78C /* TMCookieTest */;
+			targetProxy = 652DF74621BF4A3B000DB78C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		652DF72B21BF4A3A000DB78C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				652DF72C21BF4A3A000DB78C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		652DF73021BF4A3B000DB78C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				652DF73121BF4A3B000DB78C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		652DF74C21BF4A3B000DB78C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		652DF74D21BF4A3B000DB78C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		652DF74F21BF4A3B000DB78C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3GR653FR27;
+				INFOPLIST_FILE = TMCookieTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TeeMo.TMCookieTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		652DF75021BF4A3B000DB78C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3GR653FR27;
+				INFOPLIST_FILE = TMCookieTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TeeMo.TMCookieTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		652DF75221BF4A3B000DB78C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TMCookieTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TeeMo.TMCookieTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TMCookieTest.app/TMCookieTest";
+			};
+			name = Debug;
+		};
+		652DF75321BF4A3B000DB78C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TMCookieTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TeeMo.TMCookieTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TMCookieTest.app/TMCookieTest";
+			};
+			name = Release;
+		};
+		652DF75521BF4A3B000DB78C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TMCookieTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TeeMo.TMCookieTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TMCookieTest;
+			};
+			name = Debug;
+		};
+		652DF75621BF4A3B000DB78C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TMCookieTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TeeMo.TMCookieTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TMCookieTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		652DF71D21BF4A3A000DB78C /* Build configuration list for PBXProject "TMCookieTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				652DF74C21BF4A3B000DB78C /* Debug */,
+				652DF74D21BF4A3B000DB78C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		652DF74E21BF4A3B000DB78C /* Build configuration list for PBXNativeTarget "TMCookieTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				652DF74F21BF4A3B000DB78C /* Debug */,
+				652DF75021BF4A3B000DB78C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		652DF75121BF4A3B000DB78C /* Build configuration list for PBXNativeTarget "TMCookieTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				652DF75221BF4A3B000DB78C /* Debug */,
+				652DF75321BF4A3B000DB78C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		652DF75421BF4A3B000DB78C /* Build configuration list for PBXNativeTarget "TMCookieTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				652DF75521BF4A3B000DB78C /* Debug */,
+				652DF75621BF4A3B000DB78C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 652DF71A21BF4A3A000DB78C /* Project object */;
+}
