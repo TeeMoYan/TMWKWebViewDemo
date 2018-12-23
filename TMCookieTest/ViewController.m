@@ -32,10 +32,12 @@ typedef enum {
     NSLog(@"缓存路径=========%@",documentD);
     self.mDataArr = @[@"登录成功设置Cookie",@"跳转WKWebView",@"退出登录删除Cookie",@"刷新UIWebView"];
     [self creatBtns];
-    //    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0,self.view.frame.size.height - 200, self.view.frame.size.width, 200)];
-    //    self.webView.delegate = self;
-    //    [self.webView loadRequest:[self cookieAppendRequest:@"http://www.baidu.com"]];
-    //    [self.view addSubview:self.webView];
+    
+    // UIWebView 和 login方法 在这里模拟登录后 NSHTTPCookieStorage 中有 cookie  实际用法在WKViewController
+    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0,self.view.frame.size.height - 200, self.view.frame.size.width, 200)];
+    self.webView.delegate = self;
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com"]]];
+    [self.view addSubview:self.webView];
     
 }
 
@@ -90,6 +92,7 @@ typedef enum {
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"app_cookies"];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
+//模拟登录 实际开发中不用设置，直接拿到cooki 共享给WKWebView
 - (void)login{
     [self setCookieWithDomain:@"http://www.baidu.com" sessionName:@"TeeMo_Cookie_WebView" sessionValue:@"123456789" expiresDate:nil];
 }
@@ -127,11 +130,11 @@ typedef enum {
     [[NSUserDefaults standardUserDefaults] setObject:cookieProperties forKey:@"app_cookies"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     //删除原cookie, 如果存在的话
-    NSArray * arrayCookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies];
-    for (NSHTTPCookie * cookice in arrayCookies) {
-        [[NSHTTPCookieStorage sharedHTTPCookieStorage] deleteCookie:cookice];
-        
-    }
+//    NSArray * arrayCookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies];
+//    for (NSHTTPCookie * cookice in arrayCookies) {
+//        [[NSHTTPCookieStorage sharedHTTPCookieStorage] deleteCookie:cookice];
+//
+//    }
     //使用字典初始化新的cookie
     NSHTTPCookie *newcookie = [NSHTTPCookie cookieWithProperties:cookieProperties];
     //使用cookie管理器 存储cookie

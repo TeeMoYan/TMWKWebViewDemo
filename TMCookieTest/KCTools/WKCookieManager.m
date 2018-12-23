@@ -45,8 +45,8 @@ static WKCookieManager *_instance;
 /*
  第一次尝试如何让 URL 刚开始加载是带上自己的 Cookie,可以通过抓包工具去查看
  */
-- (NSURLRequest *)cookieAppendRequest{
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com"]];
+- (NSURLRequest *)cookieAppendRequest:(NSString *)url{
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
     NSArray *cookies = [NSHTTPCookieStorage sharedHTTPCookieStorage].cookies;
     //Cookies数组转换为requestHeaderFields
     NSDictionary *requestHeaderFields = [NSHTTPCookie requestHeaderFieldsWithCookies:cookies];

@@ -36,7 +36,7 @@
     
     [self.view addSubview:self.webView];
     
-    [self.webView loadRequest:[self cookieAppendRequest]];
+    [self.webView loadRequest:[[WKCookieManager shareManager]cookieAppendRequest:@"http://www.baidu.com"]];
     //JS->OC
     //注入的公共方法
     // window.webkit.messageHandlers.<name>.postMessage(<messageBody>) for all  前端要这样写
@@ -50,17 +50,6 @@
     for (NSHTTPCookie *cookie in [storages cookies]) {
         NSLog(@"%@",cookie);
     }
-}
-
-- (NSURLRequest *)cookieAppendRequest{
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com"]];
-    NSArray *cookies = [NSHTTPCookieStorage sharedHTTPCookieStorage].cookies;
-    //Cookies数组转换为requestHeaderFields
-    NSDictionary *requestHeaderFields = [NSHTTPCookie requestHeaderFieldsWithCookies:cookies];
-    //设置请求头
-    request.allHTTPHeaderFields = requestHeaderFields;
-    NSLog(@"%@",request.allHTTPHeaderFields);
-    return request;
 }
 
 #pragma mark - WKNavigationDelegate

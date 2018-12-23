@@ -20,9 +20,10 @@
 
 /**
  拼接同步到 NSHTTPCookieStorage 中的 Cookei
+ @param url 要加载的URL
  @return 拼接了 Cookie 字段后的请求
  */
-- (NSURLRequest *)cookieAppendRequest;
+- (NSURLRequest *)cookieAppendRequest:(NSString *)url;
 
 /**
  跨域请求丢失问题
